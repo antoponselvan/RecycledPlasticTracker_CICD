@@ -7,7 +7,7 @@ const {trackProduct, verifyUser} = require("../controllers/generalControllers")
 const {protect} = require("../middleware/protect")
 
 generalRouter.get("/test", (req,res)=>{
-    res.json("Hello World!")
+    res.json("Hello World! - CICD works")
 })
 
 generalRouter.post("/track", trackProduct)
